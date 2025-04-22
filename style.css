@@ -1,0 +1,53 @@
+:root {
+  --padding: 1rem;
+  --font-size: 1rem;
+  --gap: 1rem;
+  --border-radius: 1rem;
+  --width: 80vw;
+  --primary: #64558e;
+  --on-primary: #ffffff;
+  --primary-container: #ebddff;
+  --on-primary-container: #21005d;
+  --transition: 0.5s ease-in-out;
+  --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primary);
+}
+.main {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: 1fr; /* You can change this to 2fr or other values for more complex layouts */
+}
+.header {
+  /* width: var(--width); */
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  background-color: var(--on-primary);
+  color: var(--on-primary-container);
+}
+.content {
+  background-color: var(--primary-container);
+  border-radius: var(--border-radius);
+  color: var(--on-primary-container);
+}
+.description {
+  font-size: var(--font-size);
+}
+.button {
+  color: var(--on-primary-container);
+  background-color: var(--on-primary);
+  border-radius: var(--border-radius);
+  padding: 5px;
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+  display: inline-block;
+  text-decoration: none;
+}
+.button:hover {
+  transform: scale(1.1);
+}
