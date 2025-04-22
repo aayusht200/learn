@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level Two Six</title>
+    <style>
+      .container {
+        display: grid;
+        gap: 1rem;
+        font-family: "Courier New", Courier, monospace;
+        grid-template-columns: 1fr;
+        font-size: 12px;
+        padding: 1rem;
+        background-color: lightsteelblue;
+        border-radius: 1rem;
+      }
+      .container > div {
+        border-radius: 1rem;
+        padding: 1rem;
+      }
+      .container > div {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .container > div:hover {
+        transform: scale(1.1);
+      }
+      @media (min-width: 40rem) {
+        .container {
+          grid-template-columns: 1fr 1fr;
+        }
+        .boxOne {
+          background-color: lightblue;
+          grid-column: 1/3;
+        }
+        .boxTwo {
+          background-color: lightcoral;
+          grid-row: 2/4;
+        }
+        .boxThree {
+          background-color: lightcyan;
+          grid-row: 4;
+          grid-column: 1/3;
+        }
+        .boxFour {
+          background-color: lightgoldenrodyellow;
+          grid-row: 5/7;
+        }
+        .boxFive {
+          background-color: lightgray;
+          grid-row: 8;
+          grid-column: 1/3;
+        }
+        .boxSix {
+          background-color: lightgreen;
+          grid-row: 9/11;
+        }
+      }
+      .boxOne {
+        background-color: lightblue;
+      }
+      .boxTwo {
+        background-color: lightcoral;
+      }
+      .boxThree {
+        background-color: lightcyan;
+      }
+      .boxFour {
+        background-color: lightgoldenrodyellow;
+      }
+      .boxFive {
+        background-color: lightgray;
+      }
+      .boxSix {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="boxOne">
+        <h1>Box 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt,
+          illo animi vitae possimus in quam distinctio. Ad, et expedita natus,
+          facilis unde adipisci impedit eligendi assumenda doloremque veniam
+          sit!
+        </p>
+      </div>
+      <div class="boxTwo">
+        <h1>Box 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt,
+          illo animi vitae possimus in quam distinctio. Ad, et expedita natus,
+          facilis unde adipisci impedit eligendi assumenda doloremque veniam
+          sit!
+        </p>
+      </div>
+      <div class="boxThree">
+        <h1>Box 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt,
+          illo animi vitae possimus in quam distinctio. Ad, et expedita natus,
+          facilis unde adipisci impedit eligendi assumenda doloremque veniam
+          sit!
+        </p>
+      </div>
+      <div class="boxFour">
+        <h1>Box 4</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt,
+          illo animi vitae possimus in quam distinctio. Ad, et expedita natus,
+          facilis unde adipisci impedit eligendi assumenda doloremque veniam
+          sit!
+        </p>
+      </div>
+      <div class="boxFive">
+        <h1>Box 5</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt,
+          illo animi vitae possimus in quam distinctio. Ad, et expedita natus,
+          facilis unde adipisci impedit eligendi assumenda doloremque veniam
+          sit!
+        </p>
+      </div>
+      <div class="boxSix">
+        <h1>Box 6</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt,
+          illo animi vitae possimus in quam distinctio. Ad, et expedita natus,
+          facilis unde adipisci impedit eligendi assumenda doloremque veniam
+          sit!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

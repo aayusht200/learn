@@ -1,0 +1,138 @@
+:root{
+    --padding:20px;
+    --background-color: rgb(239, 239, 238);
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color:rgb(255, 255, 250);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    text-align: center;
+}
+header {
+    text-align: center;
+    padding: var(--padding);
+    background-color: #222;
+    color: white;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: var(--padding);
+}
+/* Q1 Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--background-color);
+}
+/* Q2 Responsive Card Grid */
+.card-grid{
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--padding);
+}
+.card{
+    display: flex;
+    width: 150px;
+    height: 100px;
+    background-color: var(--background-color);
+    align-items: center;
+    justify-content: center;
+}
+/* Q3 login button */
+.login-container{
+    display: flex;
+    background-color: var(--background-color);
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.login-box:hover{
+    transform: scale(1.1);
+}
+.login-box {
+    background-color: var(--background-color);
+    width: 300px;
+    padding: var(--padding);
+    box-shadow:2px 2px 5px rgba(0,0, 0, 0.5);
+    border-radius: 10px;
+    transition:  0.3s ease-in-out;
+}
+/* Q4 Sidebar Layout Section */
+.layout{
+    display: flex;
+    text-align: left;
+    padding: var(--padding);
+    flex-wrap: wrap;
+}
+.sidebar{
+    width: 25%;
+    background-color: var(--background-color);
+    
+}
+.content{
+    width:75%;
+    background-color:rgb(207, 207, 204);
+}
+/* Q5 Caculator Button */
+.column{
+    padding: var(--padding);
+    background-color: var(--background-color);
+    width: fit-content;
+    height: max-content;
+}
+.row{
+    display: flex;
+    gap: 10px;
+    padding: 3px;
+}
+.buttons{
+    background-color: aliceblue;
+    border: 0.5px solid;
+    width: 100px;
+    height: 40px;
+}
+/* Q6 Profile Card */
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    background-color:aliceblue;
+    padding: var(--padding);
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    border: 0.8px #222 solid; 
+    border-radius: 20px; 
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);  
+}
+.follow{
+    background-color:var(--background-color);
+    border: 0cap;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
+.follow:hover{
+    transform: scale(1.1);
+}
+/* Q7 Gallery Layout */
+.gallery{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.images:hover{
+    transform: scale(1.2);
+}
+.images {
+height: 150px;
+width: auto;
+transition: transform 0.3s ease-in-out;
+}

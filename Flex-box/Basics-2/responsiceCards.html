@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards</title>
+    <style>
+        .main{
+            border: 2px solid;
+            display: flex;
+            background-color: antiquewhite;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            max-width: fit-content;
+        }
+        .card{
+            background-color: rgb(199, 219, 237);
+            width: 300px;
+            transition: .3s ease-in-out;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .card:hover{
+            transform: scale(1.2);
+        }
+        .button{
+            background-color: aliceblue;
+            width: 100px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="heading">Price List 1</div>
+            <ol>
+                <li>✔️ 1 Project</li>
+                <li>✔️ 100MB Storage</li>
+                <li>❌ No Support</li>
+            </ol>
+            <input type="button" value="Select" class="button">
+        </div>
+        <div class="card">
+            <div class="heading">Price List 2</div>
+            <ol>
+                <li>✔️ 5 Projects</li>
+                <li>✔️ 500MB Storage</li>
+                <li>✔️ Email Support</li>
+            </ol>
+            <input type="button" value="Select" class="button">
+        </div>
+        <div class="card">
+            <div class="heading">Price List 3</div>
+                <ol>
+                    <li>✔️ Unlimited Projects</li>
+                    <li>✔️ 5GB Storage</li>
+                    <li>✔️ 24/7 Support</li>
+                </ol>
+            <input type="button" value="Select" class="button">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+.question {
+  background-color: lightblue;
+  border-radius: 1rem;
+  padding: 20px;
+}

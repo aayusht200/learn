@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level Two Five</title>
+    <style>
+      .container {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        background-color: lightslategrey;
+        padding: 10px;
+        border-radius: 1rem;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 12px;
+      }
+      .container > div {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 1rem;
+      }
+      .container > div:hover {
+        transform: scale(1.1);
+        max-width: 90%;
+        transition:  transform 0.5s ease-in-out;
+      }
+      .boxThree {
+        background-color: lightcyan;
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 1fr;
+      }
+      .boxThree div {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 1rem;
+        padding: 1rem;
+      }
+      .one {
+        background-color: lightskyblue;
+      }
+      .two {
+        background-color: lightseagreen;
+      }
+      .three {
+        background-color: lightsalmon;
+      }
+      .boxOne {
+        background-color: lightblue;
+      }
+      .boxTwo {
+        background-color: lightcoral;
+      }
+      .boxThree {
+        background-color: lightcyan;
+      }
+      .boxFour {
+        background-color: lightgoldenrodyellow;
+      }
+      .boxThree div:hover {
+        transition: transform 1s ease-in-out;
+        transform: scale(1.1);
+      }
+      @media (min-width: 40rem) {
+        .container {
+          grid-template-areas:
+            "header header"
+            "sidebar content"
+            "footer footer";
+        }
+        .boxOne {
+          grid-area: header;
+        }
+        .boxTwo {
+          grid-area: sidebar;
+        }
+        .boxThree {
+          grid-area: content;
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .boxFour {
+          grid-area: footer;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="boxOne">
+        <h1>Box 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt,
+          illo animi vitae possimus in quam distinctio. Ad, et expedita natus,
+          facilis unde adipisci impedit eligendi assumenda doloremque veniam
+          sit!
+        </p>
+      </div>
+      <div class="boxTwo">
+        <h1>Box 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt,
+          illo animi vitae possimus in quam distinctio. Ad, et expedita natus,
+          facilis unde adipisci impedit eligendi assumenda doloremque veniam
+          sit!
+        </p>
+      </div>
+      <div class="boxThree">
+        <div class="one">
+          <h1>Box 3.1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+            deserunt, illo animi vitae possimus in quam distinctio. Ad, et
+            expedita natus, facilis unde adipisci impedit eligendi assumenda
+            doloremque veniam sit!
+          </p>
+        </div>
+        <div class="two">
+          <h1>Box 3.2</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+            deserunt, illo animi vitae possimus in quam distinctio. Ad, et
+            expedita natus, facilis unde adipisci impedit eligendi assumenda
+            doloremque veniam sit!
+          </p>
+        </div>
+        <div class="three">
+          <h1>Box 3.3</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+            deserunt, illo animi vitae possimus in quam distinctio. Ad, et
+            expedita natus, facilis unde adipisci impedit eligendi assumenda
+            doloremque veniam sit!
+          </p>
+        </div>
+      </div>
+      <div class="boxFour">
+        <h1>Box 4</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt,
+          illo animi vitae possimus in quam distinctio. Ad, et expedita natus,
+          facilis unde adipisci impedit eligendi assumenda doloremque veniam
+          sit!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

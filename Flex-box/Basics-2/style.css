@@ -1,0 +1,129 @@
+:root {
+  --padding: 20px;
+  --border-radius: 10px;
+  --border: 1px solid;
+  --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 1.2em;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 0.8em;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2em;
+  background-color: antiquewhite;
+}
+p {
+  font-size: 0.5em;
+}
+h1 {
+  padding: 10px;
+  font-size: 40px;
+}
+.links a {
+  display: block;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+  border-bottom: var(--border);
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+#logo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+a {
+  padding: 5px;
+  color: rgb(5, 5, 5);
+}
+a:hover {
+  background-color: rgb(245, 245, 245);
+  border-radius: var(--border-radius);
+  transition: 0.1s ease-in-out;
+}
+/* introduction */
+.hero {
+  display: flex;
+  padding: var(--padding);
+  flex-wrap: wrap;
+  flex: 1 auto;
+  border-bottom: var(--border);
+}
+/* postspost */
+.blogPost {
+  display: flex;
+  padding: var(--padding);
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: var(--border);
+  flex: 1 auto;
+  text-align: center;
+}
+/* team members */
+.profile {
+  display: flex;
+  padding: var(--padding);
+  gap: 0.5em;
+  text-align: center;
+  border-bottom: var(--border);
+  flex-wrap: wrap;
+}
+.member {
+  width: 200px;
+  border: var(--border);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  flex: 1 1 auto;
+}
+/* footer */
+.base {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0% auto;
+  max-width: fit-content;
+  background-color: rgb(255, 243, 227);
+  gap: 1em;
+  flex: 1 1 300px;
+}
+footer div {
+  flex: 1 1 200px;
+  box-sizing: border-box;
+  padding: var(--padding);
+}
+.sectionHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionHeader h4{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 1rem;
+  max-height: 10rem;
+}
+.poster img{
+  max-height: 10rem;
+  border-radius: 10px;
+}
