@@ -15,25 +15,32 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   background-color: var(--primary);
 }
 .main {
   display: grid;
   gap: var(--gap);
-  grid-template-columns: 1fr; /* You can change this to 2fr or other values for more complex layouts */
+  grid-template-columns: 15vw 70vw 15vw; /* You can change this to 2fr or other values for more complex layouts */
+  min-width: fit-content;
+  /* margin: 0px auto; */
+  text-align: justify;
 }
 .header {
   /* width: var(--width); */
+  grid-column-start: 2;
   padding: var(--padding);
   border-radius: var(--border-radius);
-  background-color: var(--on-primary);
+  background-color: var(--primary-container);
   color: var(--on-primary-container);
 }
 .content {
   background-color: var(--primary-container);
   border-radius: var(--border-radius);
   color: var(--on-primary-container);
+  grid-column-start: 2;
+  padding-right: 2rem;
 }
 .description {
   font-size: var(--font-size);
