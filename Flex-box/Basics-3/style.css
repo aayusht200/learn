@@ -1,6 +1,6 @@
-:root{
-    --gap:1rem;
-    --padding:1rem
+:root {
+  --gap: 1rem;
+  --padding: 1rem;
 }
 .main {
   box-sizing: border-box;
