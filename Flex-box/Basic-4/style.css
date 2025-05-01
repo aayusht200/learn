@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.flexMain {
+  border: 5px solid green;
+  height: 100vh;
+  /* width: 80vw; */
+  background-color: rgb(158, 233, 158);
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  flex-direction: column;
+}
+.header,
+.footer {
+  height: 10%;
+  border: 5px solid blue;
+  background-color: lightblue;
+  padding: 5px;
+  gap: 10px;
+  display: flex;
+  flex: 1;
+}
+.headerOne,
+.headerTwo,
+.headerThree {
+  border: 5px solid rgb(253, 198, 149);
+  width: calc(100% / 3);
+  background-color: peachpuff;
+}
+.headerTwo {
+  display: flex;
+  padding: 5px;
+}
+.headOne,
+.headTwo {
+  border: 5px solid red;
+  width: 50%;
+}
+.footerOne,
+.footerTwo {
+  display: flex;
+  padding: 10px;
+  gap: 5px;
+  flex: 1;
+}
+.footOne {
+  border: 5px solid rgb(143, 67, 198);
+  background-color: rgb(214, 167, 247);
+  width: 60%;
+}
+.footTwo {
+  width: 40%;
+  border: 5px solid rgb(253, 198, 149);
+  background-color: peachpuff;
+}
+.content {
+  height: 50%;
+  display: flex;
+  gap: 5px;
+}
+.contentOne,
+.contentTwo {
+  width: 50%;
+  gap: 5px;
+}
+.contentOne {
+  background-color: rgb(232, 134, 134);
+  border: 5px solid rgb(106, 2, 2);
+}
+.contentTwo {
+  display: flex;
+  flex-direction: column;
+}
+.subOne,
+.subTwo {
+  background-color: rgb(232, 134, 134);
+  border: 5px solid rgb(106, 2, 2);
+  height: 50%;
+}
