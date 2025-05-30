@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function getMaxSubSum(arr) {
+            let maxSum = 0;
+            let tempSum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                tempSum = tempSum + arr[i];
+                if (tempSum >= maxSum) maxSum = tempSum
+                if (tempSum < 0) tempSum = 0
+                // console.log(i + ' tempSum ' + tempSum);
+                // console.log(i + ' maxSum ' + maxSum);
+            }
+            return maxSum;
+        }
+        function longestPositiveSubarray(arr) {
+            let maxLen = 0;
+            let tempCount = 0;
+            let tempSum = 0;
+            for (let index = 0; index < arr.length; index++) {
+                tempSum = tempSum + arr[index];
+                if (tempSum > 0) {
+                    tempCount += 1;
+                    if (tempCount > maxLen) maxLen = tempCount
+                } else {
+                    tempCount = 0;
+                    tempSum = 0;
+                }
+            }
+            return (maxLen);
+        }
+        function getMaxAverageSubarray(arr, k) {
+            let tempSum = 0.0;
+            for (let i = 0; i < k; i++) {
+                tempSum = tempSum + arr[i];
+            }
+            let counter = tempSum;
+            for (let i = k; i < arr.length; i++) {
+                tempSum = tempSum - arr[i - k] + arr[i];
+                if (tempSum > counter) {
+                    counter = tempSum;
+                }
+            }
+            return counter / k;
+        }
+    </script>
+    <title>Get Max Sub Sum</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

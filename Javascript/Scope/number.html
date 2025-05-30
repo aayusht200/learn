@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function getNumber() {
+            let number = prompt('Enter a number:');
+            return (number);
+        }
+        function primeNumbers(number) {
+            let primeNum = [];
+            for (let i = 2; i <= number; i++) {
+                let isPrime = true;
+                for (let j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if (isPrime) primeNum.push(i);
+            }
+            return ("Prime Numbers are: " + primeNum.join(','));
+        }
+        function evenOddNumber(number) {
+            let evenNumbers = [];
+            let oddNumbers = [];
+            for (let i = 1; i <= number; i++) {
+                if (i % 2 === 0) {
+                    evenNumbers.push(i);
+                } else {
+                    oddNumbers.push(i);
+                }
+            }
+            return ("Even Numbers are: " + evenNumbers.join(',') + " & Odd Numbers are: " + oddNumbers.join(','));
+        }
+        function play() {
+            let number = parseInt(getNumber());
+            console.log(number);
+            console.log(primeNumbers(number));
+            console.log(evenOddNumber(number));
+        }
+    </script>
+    <title>Numbers</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
