@@ -1,0 +1,70 @@
+function getMaxSubSum(arr) {
+    let maxSum = 0;
+    let tempSum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        tempSum = tempSum + arr[i];
+        if (tempSum >= maxSum) maxSum = tempSum
+        if (tempSum < 0) tempSum = 0
+        // console.log(i + ' tempSum ' + tempSum);
+        // console.log(i + ' maxSum ' + maxSum);
+    }
+    return maxSum;
+}
+function longestPositiveSubarray(arr) {
+    let maxLen = 0;
+    let tempCount = 0;
+    let tempSum = 0;
+    for (let index = 0; index < arr.length; index++) {
+        tempSum = tempSum + arr[index];
+        if (tempSum > 0) {
+            tempCount += 1;
+            if (tempCount > maxLen) maxLen = tempCount
+        } else {
+            tempCount = 0;
+            tempSum = 0;
+        }
+    }
+    return (maxLen);
+}
+function getMaxAverageSubarray(arr, k) {
+    let tempSum = 0.0;
+    for (let i = 0; i < k; i++) {
+        tempSum = tempSum + arr[i];
+    }
+    let counter = tempSum;
+    for (let i = k; i < arr.length; i++) {
+        tempSum = tempSum - arr[i - k] + arr[i];
+        if (tempSum > counter) {
+            counter = tempSum;
+        }
+    }
+    return counter / k;
+}
+function sumOfTripledEvens(arr) {
+    let sum = 0;
+    if (arr.length == 0) return null;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            if ((arr[i] % 2) == 0) {
+                sum += (arr[i] * 3);
+            }
+        }
+    }
+    return sum;
+}
+function countAboveAverage(arr) {
+    let count = 0;
+    let sum = 0;
+    arr.forEach(element => {
+        sum += element;
+    });
+    const arrAvg = sum / arr.length;
+    // console.log(arrAvg)
+    arr.forEach(element => {
+        if (element > arrAvg) {
+            console.log(element);
+            count++;
+        };
+    });
+    return ('The number of elements greater than avg are: ' + count);
+}
