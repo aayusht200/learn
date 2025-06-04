@@ -1,0 +1,87 @@
+# JavaScript Array Methods - Tasks
+
+Source: [JavaScript.info - Array methods](https://javascript.info/array-methods#tasks)
+
+---
+
+### 1. Translate border-left-width to camelCase
+
+Write a function `camelize(str)` that converts dash-separated words like `"border-left-width"` into camelCase: `"borderLeftWidth"`.
+
+---
+
+### 2. Filter range
+
+Write a function `filterRange(arr, a, b)` that gets an array `arr`, looks for elements with values higher or equal to `a` and lower or equal to `b` and returns a result as an array.
+
+---
+
+### 3. Filter range "in place"
+
+Write a function `filterRangeInPlace(arr, a, b)` that gets an array `arr` and removes from it all values except those that are between `a` and `b`. The test is: `a ≤ arr[i] ≤ b`. The function should only modify the array. It should not return anything.
+
+---
+
+### 4. Sort in decreasing order
+
+Make an array sorted in decreasing order.
+
+---
+
+### 5. Copy and sort array
+
+We have an array of strings `arr`. We'd like to have a sorted copy of it, but keep `arr` unmodified.
+
+---
+
+### 6. Create an extendable calculator
+
+Create a constructor function `Calculator` that creates objects with three methods:
+
+* `read()` prompts for two values and saves them as object properties.
+* `sum()` returns the sum of saved values.
+* `mul()` multiplies saved values and returns the result.
+
+---
+
+### 7. Map to names
+
+You have an array of user objects, each with `user.name`. Create an array of names.
+
+---
+
+### 8. Map to objects
+
+You have an array of user objects, each with `id` and `name`. Create an array of objects with `id` and `fullName`, where `fullName` is `"name surname"`.
+
+---
+
+### 9. Sort users by age
+
+Write the function `sortByAge(users)` that gets an array of objects with the `age` property and sorts them by age.
+
+---
+
+### 10. Shuffle an array
+
+Write the function `shuffle(array)` that shuffles (randomly reorders) elements of the array.
+
+---
+
+### 11. Get average age
+
+Write the function `getAverageAge(users)` that gets an array of objects with `age` property and returns the average age.
+
+---
+
+### 12. Filter unique array members
+
+Let `arr` be an array. Create a function `unique(arr)` that returns an array with unique items of `arr`.
+
+---
+
+### 13. Create keyed object from array
+
+Let `users` be an array of user objects, each with `id`. Create an object `id` → `user` map.
+
+---
