@@ -33,3 +33,33 @@ function inWord(arr, letter) {
     return word.includes(letter);
   });
 }
+
+function cleanArray(arr) {
+  return arr.filter((value) => {
+    return value != null || value != undefined;
+  });
+}
+
+function genZFilter(arr) {
+  return arr.filter((people) => {
+    return people.birthYear > 2000;
+  });
+}
+
+function primeNumber(arr) {
+  return arr.filter((value) => {
+    if (value < 2) return false;
+    for (i = 2; i <= Math.sqrt(value); i++) {
+      if (value % i == 0) {
+        return false;
+      }
+    }
+    return true;
+  });
+}
+
+function taskFilter(arr) {
+  return arr.filter((status) => {
+    if (status.completed === false) return status;
+  });
+}
