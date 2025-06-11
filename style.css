@@ -24,11 +24,9 @@ body {
   gap: var(--gap);
   grid-template-columns: 15vw 70vw 15vw; /* You can change this to 2fr or other values for more complex layouts */
   min-width: fit-content;
-  /* margin: 0px auto; */
   text-align: justify;
 }
 .header {
-  /* width: var(--width); */
   grid-column-start: 2;
   padding: var(--padding);
   border-radius: var(--border-radius);
@@ -57,4 +55,21 @@ body {
 }
 .button:hover {
   transform: scale(1.1);
+}
+.achievements {
+  margin-bottom: 2rem;
+  border-left: 6px solid var(--primary);
+  background: #fff7ff;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+.archive {
+  margin-top: 2rem;
+}
+.achievements h2 {
+  color: #845ec2;
+}
+.archive h2 {
+  color: #512da8;
 }
