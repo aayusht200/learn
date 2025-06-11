@@ -1,0 +1,11 @@
+const header = document.getElementsByClassName("dom-header");
+console.log(header[0]);
+const sect = document.createElement("section");
+sect.classList.add("container");
+const headerTwo = document.createElement("h2");
+headerTwo.textContent = "Welcome to my site!";
+sect.appendChild(headerTwo);
+const content = document.querySelector(".dom");
+content.appendChild(sect);
+content.style.backgroundColor = "#f0f0f0";
+sect.style.padding = "2rem";

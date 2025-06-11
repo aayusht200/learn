@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dommanipulation.js" defer></script>
+    <link rel="stylesheet" href="dommanipulation.css">
+    <title>DOM Manipulation</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header-section">
+            <h2 class="header">
+                🧠 DOM Manipulation Practice Questions
+            </h2>
+        </div>
+        <div class="section">
+            <h3 class="header">📁 Create & Select Elements</h3>
+            <ol>
+                <li class="questions">Select an element with the class .header and log it to the console.</li>
+                <ul class="solution">
+                    <li class="answers">const header = document.querySelector("h1");</li>
+                    <li class="answers">console.log(header);</li>
+                </ul>
+                <li class="questions">Create a new &ltsection> element and give it a class of "container".</li>
+                <ul class="solution">
+                    <li class="answers">const sect = document.createElement("section");</li>
+                    <li class="answers">sect.classList.add("container");</li>
+                </ul>
+                <li class="questions">Add a heading (&lth2>) inside your new section with the text "Welcome to My
+                    Site!".</li>
+                <ul class="solution">
+                    <li class="answers">
+                        const headerTwo = document.createElement("h2");
+                    </li>
+                    <li class="answers">
+                        headerTwo.textContent = "Welcome to my site!";
+                        sect.appendChild(headerTwo);
+                    </li>
+                </ul>
+                <li class="questions">Append the entire section to the &ltbody> of the page.</li>
+                <ul class="solution">
+                    <li class="answers">
+                        const content = document.querySelector(".dom");
+                    </li>
+                    <li class="answers">content.appendChild(sect);
+                    </li>
+                </ul>
+            </ol>
+        </div>
+        <div class="section">
+            <h3 class="header">🎨 Style with JavaScript</h3>
+            <ol>
+                <li class="questions">Change the background color of the body to #f0f0f0 using JavaScript.</li>
+                <ul class="solution">
+                    <li class="answers">
+                        content.style.backgroundColor = "#f0f0f0";
+                    </li>
+                </ul>
+                <li class="questions">Add padding of 2rem to the section using .style.</li>
+                <ul class="solution">
+                    <li class="answers">
+                        sect.style.padding = "2rem";
+                    </li>
+                </ul>
+            </ol>
+        </div>
+        <div class="section">
+            <h3 class="header">
+                🖱 Event Listeners
+            </h3>
+            <ol>
+                <li class="questions">
+                    Create a &ltbutton> with the text "Toggle Theme" and append it to the section.
+                </li>
+                <ul class="solution">
+                    <li class="answer">
+
+                    </li>
+                </ul>
+                <li class="questions">
+                    Create a &ltbutton> with the text "Toggle Theme" and append it to the section.
+                </li>
+                <ul class="solution">
+                    <li class="answer">
+                        
+                    </li>
+                </ul>
+                <li class="questions">
+                    Create a &ltbutton> with the text "Toggle Theme" and append it to the section.
+                </li>
+                <ul class="solution">
+                    <li class="answer">
+                        
+                    </li>
+                </ul>
+            </ol>
+        </div>
+    </div>
+    <div class="dom">
+        <h1 class="dom-header">DOM Header</h1>
+
+    </div>
+</body>
+
+</html>
