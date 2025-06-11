@@ -77,23 +77,63 @@
                 </li>
                 <ul class="solution">
                     <li class="answer">
+                        const btn = document.createElement("button");
+                    </li>
+                    <li class="answer">
+                        btn.textContent = "Toogle Theme";
+                    </li>
+                    <li class="answer">
+                        sect.appendChild(btn);
+                    </li>
+                </ul>
+                <li class="questions">
+                    Write an event listener that toggles a class "dark-theme" on the &ltbody> when the button is
+                    clicked.
+                </li>
+                <ul class="solution">
+                    <li class="answer">
+                        btn.addEventListener("click", () => {
+                        content.classList.toggle("dark-theme");
+                        });
+                    </li>
+                </ul>
+                <li class="questions">
+                    In your CSS, define .dark-theme to have a black background and white text.
+                </li>
+                <ul class="solution">
+                    <li class="answer">
+                        .dark-theme {
+                        background-color: black;
+                        color: white;
+                        }
+                    </li>
+                </ul>
+            </ol>
+        </div>
+        <div class="section">
+            <h3 class="header">
+                🧹 Clean & Replace
+            </h3>
+            <ol>
+                <li class="questions">
+                    Create a paragraph with the text "This content will be removed.", append it, and then remove it with
+                    JavaScript after 2 seconds.
+                </li>
+                <ul class="solution">
+                    <li class="answer">
 
                     </li>
                 </ul>
                 <li class="questions">
-                    Create a &ltbutton> with the text "Toggle Theme" and append it to the section.
+                    Replace the content of the heading inside your section with "You toggled the theme!" when the button
+                    is clicked.
                 </li>
                 <ul class="solution">
                     <li class="answer">
-                        
-                    </li>
-                </ul>
-                <li class="questions">
-                    Create a &ltbutton> with the text "Toggle Theme" and append it to the section.
-                </li>
-                <ul class="solution">
-                    <li class="answer">
-                        
+                        btn.addEventListener("click", () => {
+                        content.classList.toggle("dark-theme");
+                        headerTwo.textContent = "You toggled the theme!";
+                        });
                     </li>
                 </ul>
             </ol>

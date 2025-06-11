@@ -7,3 +7,12 @@ div {
   padding: 10px;
   gap: 10px;
 }
+.dom {
+  background-color: #f0f0f0;
+  color: black;
+}
+.dark-theme {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
