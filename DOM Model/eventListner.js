@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll("button");
 console.log(buttons);
 
 buttons.forEach((button) => {
-  button.addEventListener("mouseenter", () => onClick(button));
+  button.addEventListener("keyup", () => onClick(button));
 });
 
 function onClick(button) {

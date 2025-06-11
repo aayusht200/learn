@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="mdnQuestions.js" defer></script>
+    <link rel="stylesheet" href="mdnQuestion.css">
+    <title>MDN Questions</title>
+</head>
+
+<body>
+    <div class="content">
+        <div>
+            <h3 class="question">
+                1. What does the following line do?
+            </h3>
+            <p class="subQuestion">const link = document.querySelector("a");</p>
+            <p class="solution">Selects the first occurrence of an <a> (anchor) tag in the document and assigns it to
+                    the link variable.</p>
+        </div>
+        <div>
+            <h3 class="question">
+                2. What does link.textContent = "Mozilla Developer Network"; do?
+            </h3>
+            <p class="solution">
+                This assigns the link to have text content of (Mozilla Developer Network).
+            </p>
+        </div>
+        <div>
+            <h3 class="question">3. What does the following code do?</h3>
+            <p class="subQuestion">
+                link.href = "https://developer.mozilla.org";
+            </p>
+            <p class="solution">
+                assigns the href value to be ("https://developer.mozilla.org")
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                4. Create a new element and store it in a variable called sect.
+            </h3>
+            <p class="solution">
+                const sect=document.createElement("section");
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                5. Create a new paragraph and store it in a variable called para.
+            </h3>
+            <p class="solution">
+                const para = document.createElement("p");
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                6. Give the paragraph some text content.
+            </h3>
+            <p class="solution">
+                para.textContent = "This is the text Content assigned to P Element";
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                7. Append the paragraph to the section.
+            </h3>
+            <p class="solution">
+                sect.appendChild(para);
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                8. Append the section to the body.
+            </h3>
+            <p class="solution">
+                const body = document.querySelector("body");<br>
+                body.appendChild(sect);
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                9. Give the section a class of "special".
+            </h3>
+            <p class="solution">
+                sect.classList.add("special");
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                10. Remove the paragraph from the section.
+            </h3>
+            <p class="solution">
+                sect.removeChild(para);
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                11. Create a button using createElement.
+            </h3>
+            <p class="solution">
+                const btn = document.createElement("button");
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                12. Give it some text and append it to the body.
+            </h3>
+            <p class="solution">
+                btn.textContent = "Click Me";
+                body.appendChild(btn);
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                13. Add a click event listener to the button that displays an alert saying “Button clicked!”.
+            </h3>
+            <p class="solution">
+                btn.addEventListener("click", () => {
+                alert("Button Clicked!");
+                });
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                14. How would you change the background color of the body using JavaScript?
+            </h3>
+            <p class="solution">
+                body.style.backgroundColor = "grey";
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                15. How can you add a CSS class to an existing element?
+            </h3>
+            <p class="solution">
+                const heading = document.querySelectorAll("h3");
+                heading.forEach((head) => {
+                head.style.color = "White";
+                });
+            </p>
+        </div>
+        <div>
+            <h3 class="question">
+                16. How do you toggle a class on an element when clicked?
+            </h3>
+            <p class="solution">
+                show.classList.toggle("solution-show");
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

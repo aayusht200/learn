@@ -1,0 +1,15 @@
+.special {
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: beige;
+}
+.solution {
+  display: none;
+}
+.solution-show {
+  display: block;
+  color: wheat;
+}
+.subQuestion {
+  color: white;
+}
