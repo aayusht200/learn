@@ -76,13 +76,13 @@
                     Create a &ltbutton> with the text "Toggle Theme" and append it to the section.
                 </li>
                 <ul class="solution">
-                    <li class="answer">
+                    <li class="answers">
                         const btn = document.createElement("button");
                     </li>
-                    <li class="answer">
+                    <li class="answers">
                         btn.textContent = "Toogle Theme";
                     </li>
-                    <li class="answer">
+                    <li class="answers">
                         sect.appendChild(btn);
                     </li>
                 </ul>
@@ -91,7 +91,7 @@
                     clicked.
                 </li>
                 <ul class="solution">
-                    <li class="answer">
+                    <li class="answers">
                         btn.addEventListener("click", () => {
                         content.classList.toggle("dark-theme");
                         });
@@ -101,7 +101,7 @@
                     In your CSS, define .dark-theme to have a black background and white text.
                 </li>
                 <ul class="solution">
-                    <li class="answer">
+                    <li class="answers">
                         .dark-theme {
                         background-color: black;
                         color: white;
@@ -120,8 +120,20 @@
                     JavaScript after 2 seconds.
                 </li>
                 <ul class="solution">
-                    <li class="answer">
-
+                    <li class="answers">
+                        const removedPara = document.createElement("p");</li>
+                    <li class="answers">
+                        removedPara.textContent = "This content will be removed";
+                    </li>
+                    <li class="answers">
+                        sect.appendChild(removedPara);
+                    </li>
+                    <li class="answers">
+                        window.addEventListener("load", () => {<br>
+                        setTimeout(() => {<br>
+                        removedPara.classList.toggle("removed-para");<br>
+                        }, 2000);<br>
+                        });<br>
                     </li>
                 </ul>
                 <li class="questions">
@@ -129,7 +141,7 @@
                     is clicked.
                 </li>
                 <ul class="solution">
-                    <li class="answer">
+                    <li class="answers">
                         btn.addEventListener("click", () => {
                         content.classList.toggle("dark-theme");
                         headerTwo.textContent = "You toggled the theme!";

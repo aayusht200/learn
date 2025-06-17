@@ -16,3 +16,15 @@ div {
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+.removed-para {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+  font-size: 10px;
+}
+
+.shown-para {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+}

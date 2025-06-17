@@ -27,3 +27,21 @@ btn.addEventListener("click", () => {
   }
 });
 
+const removedPara = document.createElement("p");
+removedPara.textContent = "This content will be removed";
+sect.appendChild(removedPara);
+
+// window.addEventListener("load", () => {
+//   setTimeout(() => {
+//     removedPara.classList.toggle("removed-para");
+//   }, 2000);
+// });
+removedPara.classList.add("removed-para");
+function see() {
+  removedPara.classList.toggle("removed-para");
+  removedPara.classList.toggle("shown-para");
+  setTimeout(see, 2000);
+}
+window.addEventListener("load", () => {
+  setTimeout(see, 2000);
+});
