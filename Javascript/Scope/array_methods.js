@@ -22,3 +22,9 @@ console.log(
   users.reduce((total, current) => (total = current.age + total), 0) /
     users.length
 );
+
+let users_key = [
+  { id: "john", name: "John Smith", age: 20 },
+  { id: "ann", name: "Ann Smith", age: 24 },
+  { id: "pete", name: "Pete Peterson", age: 31 },
+];
