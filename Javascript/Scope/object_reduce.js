@@ -48,12 +48,23 @@ console.log(
 const students = [
   { name: "Aayush", score: 85 },
   { name: "Maya", score: 90 },
-  { name: "Jay", score: 78 },
+  { name: "Jay", score: 91 },
 ];
+
+console.log(students.reduce((a, b) => (a = a + b.score), 0) / students.length);
 
 console.log(
   students.reduce((a, b) => {
-    a = a + b.score;
+    if (a <= b.score) a = b.score;
     return a;
-  }, 0) / students.length
+  }, 0)
 );
+
+console.log(active_users.reduce((a, b) => a + "," + b.name, "").slice(1));
+
+const products = [
+  { name: "pen", quantity: 2 },
+  { name: "book", quantity: 3 },
+];
+
+console.log(products.reduce((a, b) => a + b.quantity, 0));
