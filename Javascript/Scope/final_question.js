@@ -62,3 +62,44 @@ console.log(
 
 console.log(users.reduce((temp, users) => temp + users.age, 0));
 console.log(users.reduce((temp, users) => temp + users.age, 0) / users.length);
+
+console.log(
+  users.reduce((temp, users) => users.fullName + "," + temp, "").slice(0, -1)
+);
+
+console.log(users.filter((a) => a.isActive).map((users) => users.fullName));
+
+console.log(
+  users.map((users) => users.email).sort((a, b) => a.localeCompare(b))
+);
+
+console.log(
+  users.map(
+    (users) => users.fullName.split(" ")[0][0] + users.fullName.split(" ")[1][0]
+  )
+);
+
+console.log(
+  users.sort((a, b) =>
+    a.fullName.split(" ")[1][0].localeCompare(b.fullName.split(" ")[1][0])
+  )
+);
+
+console.log(
+  users.sort((a, b) => {
+    const [, tempA] = a.fullName.split(" ");
+    const [, tempB] = b.fullName.split(" ");
+    return tempA.localeCompare(tempB);
+  })
+);
+
+console.log(
+  users.filter((a) => "aeiou".includes(a.fullName[0].toLocaleLowerCase()))
+);
+
+console.log(
+  users.filter((a) => {
+    const [, lastName] = a.fullName.split(" ");
+    return ["a", "e", "i", "o", "u"].includes.lastName[0];
+  })
+);
