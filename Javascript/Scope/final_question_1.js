@@ -16,3 +16,27 @@ const users = [
   },
 ];
 console.log(users);
+
+console.log(users.filter((users) => users.isActive));
+
+console.log(users.filter((users) => users.age >= 18));
+
+console.log(users.filter((users) => users.email.endsWith("gmail.com")));
+
+console.log(users.map((users) => users.fullName));
+
+console.log(users.map((users) => users.fullName + " (" + users.age + ")"));
+
+console.log(
+  users.map((users) => {
+    users;
+    if (users.age > 18) users.isAdult = true;
+    else users.isAdult = false;
+    return users;
+  })
+);
+
+console.log(users.sort((a, b) => a.age - b.age));
+
+console.log(users.sort((a, b) => b.age - a.age));
+
