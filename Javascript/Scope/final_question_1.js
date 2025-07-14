@@ -67,3 +67,33 @@ console.log(
     return temp;
   }, 0)
 );
+
+// 12. Calculate average age of all users
+console.log(
+  users.reduce((temp, user) => {
+    temp = temp + user.age;
+    return temp;
+  }, 0) / users.length
+);
+
+// 13. Create a comma-separated list of full names
+console.log(
+  users
+    .reduce((temp, user) => {
+      temp = temp + "," + user.fullName;
+      return temp;
+    }, "")
+    .slice(1)
+);
+// 🔍 Alternative: Use `.join(", ")` on a `.map()` for simplicity
+
+// 14. Get full names of only active users
+console.log(users.filter((user) => user.isActive).map((user) => user.fullName)); // ✅ Correct: First filters for active users, then maps to just their full names
+
+// 15. Get user initials from full name (e.g., "John Doe" → "JD")
+console.log(
+  users.map((users) => {
+    let temp = users.fullName.split(" ");
+    return temp[0][0] + (temp[1] ? temp[1][0] : "");
+  })
+);
