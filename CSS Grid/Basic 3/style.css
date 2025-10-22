@@ -10,45 +10,38 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
   padding: 1rem;
   font-family: "Courier New", Courier, monospace;
   font-weight: 550;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
 }
 div {
   border: 1px solid;
   justify-items: center;
   border-radius: 1rem;
 }
-.header,
-.footer {
-  grid-column: 1/-1;
+.header {
+  background-color: #006157;
+  grid-column: span 2;
 }
-
 .sidebar {
-  grid-column: 1/2;
-  grid-row: 2/5;
+  grid-column: span 1;
+  grid-row: span 2;
   background-color: #005b94;
 }
-.nav,
-.article {
-  grid-column: 2/-1;
-}
 .nav {
-  grid-row: 2/2;
   background-color: #642cde;
 }
 .article {
-  grid-row: 3/5;
   background-color: #7e1dc3;
 }
 .footer {
+  grid-column: span 2;
   background-color: #393f4d;
 }
-.header {
-  background-color: #006157;
-}
+
 p {
   padding: 1rem;
 }
